@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Update Customer </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> CUstomer ID</label>
+                        <input type="text" class="form-control" id="cid" [(ngModel)]="customer.cid" name="cid">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Customer Name</label>
+                        <input type="text" class="form-control" id="cname" [(ngModel)]="customer.cname" name="cname">
+                    </div>
+
+                    <div class="form-group">
+                        <label> CUstomer Balance</label>
+                        <input type="text" class="form-control" id="cbalance" [(ngModel)]="customer.cbalance" name="cbalance">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Branch Id</label>
+                        <input type="text" class="form-control" id="bid" [(ngModel)]="customer.bid" name="bid">
+                    </div>
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
